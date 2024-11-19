@@ -1,0 +1,62 @@
+.banner {
+  width: 100vw;
+  height: 100vh;
+
+  &_Block {
+    height: 14%;
+    width: 100%
+  }
+  &_Image {
+    z-index: 0;
+    width: 100%;
+    height: 85%;
+    position: relative;
+    text-align: center;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    
+    &-Photo{
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+
+    &__Box {
+      color: #0F0612;
+      position: absolute;
+      background-color: transparent;
+
+      &-Tittle, &-Text {  
+        color: #0F0612; 
+        background-color: transparent;
+      }
+
+      &-Text {  font-size: 2rem  }
+      
+      &-Tittle {  
+        font-size: 7rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      
+        &--Image {
+          background-color: transparent;
+          width: 10rem;
+          height: 10rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen {
+  @media (max-width: 480px) {
+    .banner {
+      &_Block {
+        height: 0;
+        display: none;
+      }
+    }
+  }
+}

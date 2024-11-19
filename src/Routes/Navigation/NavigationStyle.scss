@@ -1,0 +1,94 @@
+.Navigation {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  padding: 1%;
+  background-color: transparent; 
+  overflow: hidden;
+
+  &_Section {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    overflow-y: hidden;
+
+    &__Box {  
+      overflow-y: hidden;
+      width: 25%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      color: #977BBB;
+      font-family: "Bokor", system-ui;
+      font-size: 2.75rem;
+      cursor: initial;
+
+      &-Image {  width: 4rem;  }
+    }
+  }
+}
+  @media screen {
+    @media (max-width: 480px) {
+      .Navigation {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &_Section {
+          width: 80%;
+          margin: 1%;
+          border: 2.5px #977BBB solid;
+          border-radius: 5px;
+
+          &__List {  display: none;  }
+          &__Box {  
+            width: 75%;
+            font-size: 2.5rem;
+            cursor: pointer;
+
+            img {  width: 3rem;  }}
+            &:active, &:focus-visible {
+            border: none;
+          }
+        }
+      }
+      .Navigation.isOpen {
+        height: 100vh;
+        width: 100vw;
+
+        .Navigation_Section {  
+          width: 100%;
+          justify-content: space-between;
+          flex-direction: column;
+          border: 0;
+          margin: 0;
+          border-radius: 0;
+
+          &__Box {
+            height: 20%;
+            width: 100%;
+            border-radius: 5px;
+            border: 5px solid #977BBB; 
+
+          }
+        }
+      }
+    @media (min-width: 480px) and (max-width: 640px) {
+      .Navigation { 
+        &_Section {  
+          margin: 0; 
+          
+          &__Box {  &-Image {  width: 0px  }}
+        }
+    }}
+    @media (min-width: 640px) and (max-width: 768px) {}
+    @media (min-width: 768px) and (max-width: 1024px) {}
+  }}
+

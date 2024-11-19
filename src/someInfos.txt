@@ -1,0 +1,4 @@
+Color Palets:
+~ Background (Black): #0F0618 
+~ Base (Dark Purple): #36204D
+~ Highlight (purple): #866AAA
