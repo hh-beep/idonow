@@ -4,14 +4,16 @@
 
 
 
-* {
+.Page * {
   background-color: #0F0612;
   margin: 0;
   padding: 0;
   border: 0;
   overflow-x: hidden;
   transition: 500ms all;
+  overflow-y: hidden; 
 }
+.Page {  overflow-x: hidden;  }
 p { 
   font-family: "Cormorant  Garamond";
   font-weight: 500;
@@ -20,7 +22,7 @@ p {
   font-size: 1.375rem;
   overflow-y: hidden
 }
-h1 {
+h1, h2, h3 {
   font-family: "Bokor", system-ui;
   font-weight: 500;
   font-style: normal;

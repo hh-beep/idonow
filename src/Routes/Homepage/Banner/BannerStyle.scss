@@ -57,6 +57,27 @@
         height: 0;
         display: none;
       }
+      &_Image {
+        height: 100%;
+        &__Box {
+          &-Text {  display: none;  }
+          &-Tittle {  
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 7rem;  
+            &--Image {  width: 12rem; height: 12rem;  }
+          }
+        }
+      }
     }
+  }
+
+  @media (min-width: 1020px) {
+    .banner { &_Image { &__Box { &-Tittle {  
+      font-size: 9rem;  
+      &--Image {  width: 12rem; height: 12rem;  }
+    }}}}
   }
 }

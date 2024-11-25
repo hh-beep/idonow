@@ -13,7 +13,7 @@ const Navigation = ({  thisPath  }) => {
 
   const listPaths = [
     {  name: "Home", path: "/"  },
-    {  name: "Photos", path: "/Photos/"  },
+    {  name: "Fotos", path: "/Photos/"  },
     {  name: "Me :D", path: "/Me/"  }
   ]
 

@@ -1,8 +1,10 @@
 // General Imports
 import {  StrictMode  } from 'react'
 import {  createRoot  } from 'react-dom/client'
-import initializeFirebase from "./initializeFirebase.tsx"
 import './index.css'
+
+// API's
+import Firebase from "./API/Firebase";
 
 // Routes Imports 
 import {
@@ -14,7 +16,7 @@ import Homepage from "./Routes/Homepage/Homepage"
 
 
 // Initialize the Firebase SDK's
-initializeFirebase()
+Firebase()
 
 
 

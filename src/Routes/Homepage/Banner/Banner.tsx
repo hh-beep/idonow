@@ -28,7 +28,7 @@ const Banner = () => {
           </h1>
 
 
-          <p className="banner_Image__Box-Text">algumas fotos de recordacion :D</p>
+          <p className="banner_Image__Box-Text">Algumas fotos de recordacion :D</p>
         </section>
       </section>
     </section>
