@@ -32,7 +32,7 @@
         background-color: transparent;
       }
 
-      &-Text {  font-size: 2rem  }
+      &-Text {  font-size: 1.625rem  }
       
       &-Tittle {  
         font-size: 7rem;
@@ -75,9 +75,23 @@
   }
 
   @media (min-width: 1020px) {
-    .banner { &_Image { &__Box { &-Tittle {  
-      font-size: 9rem;  
-      &--Image {  width: 12rem; height: 12rem;  }
+    .banner { &_Image { &__Box { 
+      &-Text {  font-size: 2rem;  }
+      &-Tittle {  
+        font-size: 9rem;  
+        &--Image {  width: 12rem; height: 12rem;  }
     }}}}
+  }
+
+  @media (min-width: 1536px) {
+    .banner { &_Image { &__Box { 
+      &-Tittle {
+        font-size: 12rem;
+        &--Image {  width: 15rem; height: 15rem;}
+      }
+      &-Text {
+        font-size: 2.5rem;
+      }
+    }}}
   }
 }

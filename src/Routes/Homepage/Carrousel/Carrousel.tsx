@@ -23,8 +23,10 @@ const Carrousel = ({  infos  }: {infos: Object}) => {
       <section className="Carrousel_Section">
 
         <section className="Carrousel_Section__Container">
-          <HiFire className="Carrousel_Section__Container-Icon"/>
-          <h2 className="Carrousel_Section__Container-Tittle">As Melhores</h2>
+          <section className="Carrousel_Section__Container-Box">
+            <HiFire className="Carrousel_Section__Container-Box--Icon"/>  
+            <h2 className="Carrousel_Section__Container-Box--Tittle">Las Melhores</h2>
+          </section>
         </section>
 
         <Slider
@@ -45,12 +47,12 @@ const Carrousel = ({  infos  }: {infos: Object}) => {
               }
             },
             {
-              breakpoint: 720,
+              breakpoint: 1024,
               settings: {
                 slidesToShow: 2,
                 speed: 600
               }
-            }
+            },
           ]}
         >
         {CarrouselItems.map(  (item: {url: string, date: string}, key: number) => {

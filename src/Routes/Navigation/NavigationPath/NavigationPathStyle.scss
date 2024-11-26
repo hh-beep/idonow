@@ -10,7 +10,16 @@
   @media screen {
     @media (max-width: 480px) {
       display: none;
- 
     }
+  }
+  @media (min-width: 1024px) {
+    &_Item { &__Text {
+      font-size: 1.75rem;
+    }} 
+  }
+  @media (min-width: 1536px) {
+    &_Item { &__Text {
+      font-size: 2.125rem;
+    }}
   }
 }

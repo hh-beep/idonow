@@ -15,8 +15,8 @@ const NavigationPath = ({  listPaths  }: {listPaths: ListPathModel[]}) => {
     <ul className="List">
       {listPaths.map(  (value: {path: string, name:string}, key: number) => {
           return (
-            <Link key={  key  } to={  value.path  }>
-              <p>{  value.name  }</p>
+            <Link className="List_Item" key={  key  } to={  value.path  }>
+              <p className="List_Item__Text">{  value.name  }</p>
             </Link>
           )})}
     </ul>

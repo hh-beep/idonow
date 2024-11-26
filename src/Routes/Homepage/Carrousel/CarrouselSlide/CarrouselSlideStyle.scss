@@ -40,4 +40,20 @@
       }
     }
   }
+  @media screen {
+    @media (min-width: 480px) {
+      &_Container {
+        height: 50%;
+      }
+    }
+    @media (min-width: 1536px) {
+      &_Container { 
+        height: 75%;
+        &__Box { 
+          &-Icon {  width: 3rem; height: 3rem;  }
+          &-Date {  font-size: 1.5rem;  }
+      }}
+    }
+  }
 }
+

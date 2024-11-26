@@ -86,7 +86,21 @@
       }
     }
   }
-  @media (min-width: 640px) and (max-width: 768px) {}
-  @media (min-width: 768px) and (max-width: 1020px) {}
+  @media (min-width: 1020px) {     
+    .Navigation { &_Section { &__Box {
+      font-size: 3.25rem;
+      &-Image {
+        width: 5rem;
+      }
+    }}}
+  }
+  @media (min-width: 1536px) {
+    .Navigation { &_Section { &__Box {
+      font-size: 3.625rem;
+      &-Image {
+        width: 5.75rem;
+      }
+    }}}
+  }
 }
 
