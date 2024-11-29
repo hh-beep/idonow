@@ -7,6 +7,17 @@
   height: 100%;
   flex-direction: column;
 
+
+  &:hover {
+    transform: scale(1.125);
+    cursor: pointer;
+
+    &_Container {
+      &__Image {  width: 95%;  }
+    }
+  }
+
+
   &_Container {
     background-color: #FAFAFB;
     width: 80%;

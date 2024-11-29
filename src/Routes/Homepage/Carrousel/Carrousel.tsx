@@ -57,7 +57,7 @@ const Carrousel = ({  infos  }: {infos: Object}) => {
         >
         {CarrouselItems.map(  (item: {url: string, date: string}, key: number) => {
           return (
-            <CarrouselSlide key={  key  } url={  item.url  } date={  item.date  }/>
+            <CarrouselSlide key={  key  } item={  item  } />
           )
         })}        
         </Slider>
