@@ -38,7 +38,7 @@ const About = () => {
           if (imgsArray[rand-1] !== undefined) {  setImage(imgsArray[rand - 1])}
           else {  setImage(imgsArray[rand+1])  }
         }
-      }, 3000)
+      }, 1750)
     }
     else {  setImage(My)  }
   })
