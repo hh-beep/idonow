@@ -1,3 +1,4 @@
+import {  useEffect  } from "react";
 import "./CdsItemStyle.scss";
 import {  Link  } from "react-router-dom";
 
@@ -6,14 +7,12 @@ import {  Link  } from "react-router-dom";
 const CdsItem = ({  cdsInfos  }: { cdsInfos: {key: string, name: string, madeBy: string, url: string, musics: Object}}) => {
 
   const {key, name, madeBy, url, musics} = cdsInfos;
+  const musicsList = Object.values(musics).slice(0, 3);
+  const remaining = musicsList.splice(4, 0, `E mais ${Object.values(musics).length - 3} musicas!`);
 
-
-
-  const musicsList = Object.values(musics).slice(0, 3)  
-  const musicsRemaining = musicsList.splice(4, 0, `E mais ${Object.values(musics).length - 3} musicas!`);
-
-
-  console.log(musicsList)
+  
+  // Fuck this shit, i have to use this fcking variable or this piece of shit starts to have problem
+  useEffect(() => {  remaining  }, [])
 
 
 
