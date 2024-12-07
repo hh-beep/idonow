@@ -8,13 +8,12 @@ import NavigationPathHamb from "./NavigationPathHamb/NavigationPathHamb";
 
 const Navigation = ({  thisPath  }) => {
 
-  const whereIsNavigation = thisPath;
   const [isOpen, setIsOpen] = useState(false);
 
   const listPaths = [
     {  name: "Home", path: "/"  },
     {  name: "Fotos", path: "/Photos/"  },
-    {  name: "Me :D", path: "/Me/"  }
+    {  name: "Cds", path: "/Cds/"  }
   ]
 
 

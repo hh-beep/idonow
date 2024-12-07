@@ -4,15 +4,13 @@ import Logo from "../../../../assets/Logo-Black.svg";
 
 
 
-const CarrouselSlide = ({  item  }: {  item: {url: string, date: string}}) => {
+const CarrouselSlide = ({  item  }: {  item: {url: string, date: string, key: string}}) => {
   
-  const {url, date} = item;
-
-  console.log(item)
+  const {url, date, key} = item;
 
 
   return (
-    <Link to={"/Photos/Photo" + "_key"} className="Slide">
+    <Link to={"/Photo/" + key} state={  item  } className="Slide">
       <section className="Slide_Container">
         <img className="Slide_Container__Image" src={  url  }/> 
       

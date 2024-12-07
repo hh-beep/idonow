@@ -48,8 +48,8 @@ const About = () => {
     <section className="About">
       <section className="About_Container">
         <section className="About_Container__Box">
-          <GiCrownedSkull className="About_Container__Box-Icon"/>
           <h1 className="About_Container__Box-Tittle">Abuout</h1>
+          <GiCrownedSkull className="About_Container__Box-Icon"/>
         </section>
       </section>
 
@@ -60,7 +60,7 @@ const About = () => {
         </button>
 
         <section className="About_Figure__Section">
-          <p className="About_Figure__Section-Text">No sei o que escrever &#128557; Faço fotos, comidas, codigos e toco musica, além de ter uns cd veio de coleção (Black Sabbath, Raimundos, Mamonas, Ozzy e Ratos &#128526;). Já fiz uns outros projetos de programação como sites e apps de celular, alem de saber sobre react, javascript, vite e um pouco sobre javascript, python e essas paradas.</p>
+          <p className="About_Figure__Section-Text">No sei o que escrever &#128557; Faço fotos, comidas, codigos e toco musica, além de ter uns cd veio de coleção (Black Sabbath, Raimundos, Mamonas, Ozzy e Ratos &#128526;). Já fiz uns outros projetos de programação como sites e apps de celular, alem de saber sobre react, javascript, vite e um pouco sobre typescript, python e essas paradas.</p>
         </section>
       </figure>
     </section>

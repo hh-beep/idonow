@@ -1,0 +1,96 @@
+.Footer {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  &_Section {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: 30%;
+    width: 100%;
+    flex-direction: column;
+
+    &__Box {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+     
+      &-Icon {  width: 5.5rem; height: 5.5rem; color: #977BBB;  }
+      &-Tittle {  font-size: 2.75rem;  }
+    }
+  }
+  &_List {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 90%;
+      
+    &__Item { 
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row;
+      height: 80%;
+      width: 90%;
+
+      &-Text {  font-size: 2rem;  }
+    }
+  }
+}
+
+@media screen {
+  @media (min-width: 480px) { .Footer {  height: 80vh;  }}
+  @media (min-width: 720px) {
+    .Footer {
+      height: 70vh;
+      &_Section { 
+        height: 30%;
+        align-items: end;
+        &__Box { 
+          width: 60%;
+          &-Tittle {  font-size: 3.25rem;  }}
+      }
+      &_List {
+        height: 70%;
+        flex-direction: row;
+        &__Item { 
+          border-radius: 7px;
+          height: 40%;
+          border: 2.5px solid #977BBB;  
+          width: 30%;  
+        }
+      }
+    }
+  }
+  @media (min-width: 1024px) {
+    .Footer {
+      height: 60vh;
+      &_Section {
+        width: 90%;
+        &__Box {
+          width: 50%;
+          &-Tittle {  font-size: 4rem;  }
+        }
+      }
+      &_List {
+        flex-direction: row;
+
+        &__Item {
+          height: 50%;
+          width: 25%;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+  @media (min-width: 1536px) {}
+}
+

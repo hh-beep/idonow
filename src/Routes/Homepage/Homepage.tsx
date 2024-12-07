@@ -10,6 +10,8 @@ import Navigation from "../Navigation/Navigation";
 import Banner from "./Banner/Banner.tsx";
 import Carrousel from "./Carrousel/Carrousel.tsx";
 import About from "./About/About.tsx";
+import Cds from "./Cds/Cds.tsx";
+import Footer from "./Footer/Footer.tsx";
 
 // API
 import {
@@ -25,8 +27,11 @@ const Homepage = () => {
   // state inicializado com um modelo para evitar error do typescript
   const [db, setDb] = useState({
     AllPhotos: {},
-    Categorys: {  Best_Photos: {}  },
-    Photos: {}
+    PhotosCategorys: {  Best_Photos: {}  },
+    PhotosByDate: {},
+    AllCds: {},
+    CdsCategorys: {  Best_Cds: {}  },
+    CdsByBands: {},
   })
 
 
@@ -44,8 +49,10 @@ const Homepage = () => {
     <section className="Page">
       <Navigation thisPath="/"/>
       <Banner />
-      <Carrousel infos={  db !== undefined ? db.Categorys.Best_Photos : {}  }/>
+      <Carrousel infos={  db !== undefined ? db.PhotosCategorys.Best_Photos : {}  }/>
       <About />
+      <Cds infos={  db !== undefined ? db.CdsCategorys.Best_Cds : {}  }/>
+      <Footer />
     </section>
   )
 }
